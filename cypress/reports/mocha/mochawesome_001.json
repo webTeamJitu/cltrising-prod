@@ -1,0 +1,202 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 6,
+    "passes": 6,
+    "pending": 0,
+    "failures": 0,
+    "start": "2023-07-21T13:46:08.875Z",
+    "end": "2023-07-21T13:46:25.932Z",
+    "duration": 17057,
+    "testsRegistered": 6,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "01d756ed-046f-41ce-8d4d-f240deac1168",
+      "title": "",
+      "fullFile": "cypress\\e2e\\home.cy.js",
+      "file": "cypress\\e2e\\home.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c4792f37-41f6-47a9-82aa-f846dd1f0d4a",
+          "title": "Home test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should find home page image",
+              "fullTitle": "Home test should find home page image",
+              "timedOut": null,
+              "duration": 6416,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\home.cy.js\"\n}",
+              "code": "cy.get('.tatsu-r1-99gT75h > .tatsu-column-inner > .tatsu-column-pad-wrap > .tatsu-column-pad > .tatsu-single-image > .tatsu-single-image-inner > .tatsu-gradient-border').should('be.visible', \"have.attr\", \"src\", \"http://cltrising.jitudevops.com/wp-content/uploads/2020/05/home-photos-alt.png\");",
+              "err": {},
+              "uuid": "97678a7a-272b-4728-869c-66248e9829ab",
+              "parentUUID": "c4792f37-41f6-47a9-82aa-f846dd1f0d4a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should find the header texts on the home section",
+              "fullTitle": "Home test Should find the header texts on the home section",
+              "timedOut": null,
+              "duration": 1479,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\home.cy.js\"\n}",
+              "code": "cy.get('.tatsu-inline-text-inner ');\ncy.contains(\"Improve your academic skills Sharpen your test-taking strategies Enhance your college planning. Achieve your career goals, strengthen your family, and optimize your quality of life.\");",
+              "err": {},
+              "uuid": "26eaa047-f3c0-4772-96c8-54d5c699bbb8",
+              "parentUUID": "c4792f37-41f6-47a9-82aa-f846dd1f0d4a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should find the vision content",
+              "fullTitle": "Home test Should find the vision content",
+              "timedOut": null,
+              "duration": 2002,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\home.cy.js\"\n}",
+              "code": "cy.get('#home');\ncy.contains('Our vision is to support Charlotte area students and families by creating access to opportunities to optimize quality of life.');",
+              "err": {},
+              "uuid": "7814e239-c05e-47e9-83c9-3d66b1080ab5",
+              "parentUUID": "c4792f37-41f6-47a9-82aa-f846dd1f0d4a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should find the values",
+              "fullTitle": "Home test Should find the values",
+              "timedOut": null,
+              "duration": 1392,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\home.cy.js\"\n}",
+              "code": "cy.get('.tatsu-S12qqg6mq2 > .tatsu-column-inner > .tatsu-column-pad-wrap > .tatsu-column-pad > .tatsu-module > .tatsu-text-inner > ul > li').should('have.text', 'CLTRising advocates emphasize collaboration with families and community partnerships in all programming.');",
+              "err": {},
+              "uuid": "4602fdda-ce48-4596-89c7-4cb9f679d0cb",
+              "parentUUID": "c4792f37-41f6-47a9-82aa-f846dd1f0d4a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should find the values",
+              "fullTitle": "Home test Should find the values",
+              "timedOut": null,
+              "duration": 1345,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\home.cy.js\"\n}",
+              "code": "cy.get('.tatsu-Bk99ceaX5h > .tatsu-column-inner > .tatsu-column-pad-wrap > .tatsu-column-pad > .tatsu-module > .tatsu-text-inner > .ak-ul > li > p').should('have.text', 'Students and families take ownership of their goals with the support of CLTRising advocates.');",
+              "err": {},
+              "uuid": "741a83e8-f3b5-4a31-9843-35fd99cbe072",
+              "parentUUID": "c4792f37-41f6-47a9-82aa-f846dd1f0d4a",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should find the values",
+              "fullTitle": "Home test Should find the values",
+              "timedOut": null,
+              "duration": 1443,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": "{\n  \"title\": \"cypress-mochawesome-reporter-videos-passed\",\n  \"value\": \"cypress\\\\e2e\\\\home.cy.js\"\n}",
+              "code": "cy.get('.tatsu-r109clTX5h > .tatsu-column-inner > .tatsu-column-pad-wrap > .tatsu-column-pad > .tatsu-module > .tatsu-text-inner > ul > li').should('have.text', 'Commitment from CLTRising advocates and families creates long-term growth and success.');",
+              "err": {},
+              "uuid": "f77b4fb6-70af-4f0e-904d-2e064fca8ae6",
+              "parentUUID": "c4792f37-41f6-47a9-82aa-f846dd1f0d4a",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "97678a7a-272b-4728-869c-66248e9829ab",
+            "26eaa047-f3c0-4772-96c8-54d5c699bbb8",
+            "7814e239-c05e-47e9-83c9-3d66b1080ab5",
+            "4602fdda-ce48-4596-89c7-4cb9f679d0cb",
+            "741a83e8-f3b5-4a31-9843-35fd99cbe072",
+            "f77b4fb6-70af-4f0e-904d-2e064fca8ae6"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 14077,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
