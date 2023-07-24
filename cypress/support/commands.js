@@ -23,3 +23,13 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+// cypress/support/commands/jsonCommands.js
+
+// cypress/support/commands/jsonCommands.js
+
+Cypress.Commands.add('readJson', (filePath) => {
+    cy.readFile(filePath);
+    
+  });
+  

@@ -24,6 +24,14 @@ const qualifications = {
 const application_process = { 
     0: ['Accepting applications early September 2023. Check back soon for more details.']
 }
+
+const services_provided = { 
+    0: ['One-on-one academic tutoring with a focus on English, math, and SAT prep'],
+    1: ['Reading comprehension grammar, and math skills'],
+    2: ['Test-taking strategies'],
+    3: ['Homework assistace']
+}
+
 module.exports = {
     services,
     qualifications,
