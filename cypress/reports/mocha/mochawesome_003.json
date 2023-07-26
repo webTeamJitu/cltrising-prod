@@ -1,0 +1,177 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 4,
+    "passes": 1,
+    "pending": 0,
+    "failures": 3,
+    "start": "2023-07-26T08:45:26.264Z",
+    "end": "2023-07-26T08:51:43.602Z",
+    "duration": 377338,
+    "testsRegistered": 4,
+    "passPercent": 25,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "b4a7df07-5ea8-4d82-b72a-929dd25e6e21",
+      "title": "",
+      "fullFile": "cypress\\e2e\\footer.cy.js",
+      "file": "cypress\\e2e\\footer.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "81ae5e83-7320-4ba8-8bd6-fd327263fccd",
+          "title": "Footer tests",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "should find the logo for the footer",
+              "fullTitle": "Footer tests should find the logo for the footer",
+              "timedOut": null,
+              "duration": 6128,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.get('#bottom-widgets-wrap').find(\"a\", \"img[class='loaded']\").should(\"be.visible\");",
+              "err": {},
+              "uuid": "4c1a7f4f-59d7-42da-aa48-8374fcc30592",
+              "parentUUID": "81ae5e83-7320-4ba8-8bd6-fd327263fccd",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should show about us info for the footer section",
+              "fullTitle": "Footer tests Should show about us info for the footer section",
+              "timedOut": null,
+              "duration": 121063,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.readFile(Cypress.env('footer')).then(data => {\n  const about = data.about;\n  cy.wrap(about).each(item => {\n    cy.get(':nth-child(2) > .widget_text').within(() => {\n      cy.contains(item[0]).should(\"be.visible\", \"not.be.empty\");\n    });\n  });\n  cy.go(\"back\");\n});",
+              "err": {
+                "message": "CypressError: Timed out after waiting `120000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `120000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
+                "estack": "CypressError: Timed out after waiting `120000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `120000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (https://cltrising.com/__cypress/runner/cypress_runner.js:146876:72)\n    at <unknown> (https://cltrising.com/__cypress/runner/cypress_runner.js:147403:18)\n    at tryCatcher (https://cltrising.com/__cypress/runner/cypress_runner.js:18744:23)\n    at <unknown> (https://cltrising.com/__cypress/runner/cypress_runner.js:13866:41)\n    at tryCatcher (https://cltrising.com/__cypress/runner/cypress_runner.js:18744:23)\n    at Promise._settlePromiseFromHandler (https://cltrising.com/__cypress/runner/cypress_runner.js:16679:31)\n    at Promise._settlePromise (https://cltrising.com/__cypress/runner/cypress_runner.js:16736:18)\n    at Promise._settlePromise0 (https://cltrising.com/__cypress/runner/cypress_runner.js:16781:10)\n    at Promise._settlePromises (https://cltrising.com/__cypress/runner/cypress_runner.js:16857:18)\n    at _drainQueueStep (https://cltrising.com/__cypress/runner/cypress_runner.js:13451:12)\n    at _drainQueue (https://cltrising.com/__cypress/runner/cypress_runner.js:13444:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://cltrising.com/__cypress/runner/cypress_runner.js:13460:5)\n    at Async.drainQueues (https://cltrising.com/__cypress/runner/cypress_runner.js:13330:14)\nFrom Your Spec Code:\n    at Context.eval (webpack:///./cypress/e2e/footer.cy.js:25:15)",
+                "diff": null
+              },
+              "uuid": "e57096f4-32d5-4876-b614-93adf6d31a6e",
+              "parentUUID": "81ae5e83-7320-4ba8-8bd6-fd327263fccd",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should show resources in the footer",
+              "fullTitle": "Footer tests Should show resources in the footer",
+              "timedOut": null,
+              "duration": 124169,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.readFile(Cypress.env('footer')).then(data => {\n  const resources = data.resources;\n  cy.wrap(resources).each(item => {\n    cy.get(':nth-child(3) > .widget_text').within(() => {\n      cy.contains(item[0]).should(\"be.visible\");\n    });\n  });\n  cy.go(\"back\");\n});",
+              "err": {
+                "message": "CypressError: Timed out after waiting `120000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `120000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
+                "estack": "CypressError: Timed out after waiting `120000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `120000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (https://cltrising.com/__cypress/runner/cypress_runner.js:146876:72)\n    at <unknown> (https://cltrising.com/__cypress/runner/cypress_runner.js:147403:18)\n    at tryCatcher (https://cltrising.com/__cypress/runner/cypress_runner.js:18744:23)\n    at <unknown> (https://cltrising.com/__cypress/runner/cypress_runner.js:13866:41)\n    at tryCatcher (https://cltrising.com/__cypress/runner/cypress_runner.js:18744:23)\n    at Promise._settlePromiseFromHandler (https://cltrising.com/__cypress/runner/cypress_runner.js:16679:31)\n    at Promise._settlePromise (https://cltrising.com/__cypress/runner/cypress_runner.js:16736:18)\n    at Promise._settlePromise0 (https://cltrising.com/__cypress/runner/cypress_runner.js:16781:10)\n    at Promise._settlePromises (https://cltrising.com/__cypress/runner/cypress_runner.js:16857:18)\n    at _drainQueueStep (https://cltrising.com/__cypress/runner/cypress_runner.js:13451:12)\n    at _drainQueue (https://cltrising.com/__cypress/runner/cypress_runner.js:13444:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://cltrising.com/__cypress/runner/cypress_runner.js:13460:5)\n    at Async.drainQueues (https://cltrising.com/__cypress/runner/cypress_runner.js:13330:14)\nFrom Your Spec Code:\n    at Context.eval (webpack:///./cypress/e2e/footer.cy.js:39:15)",
+                "diff": null
+              },
+              "uuid": "cf5b5993-2939-4703-97ae-6bc870eadcb0",
+              "parentUUID": "81ae5e83-7320-4ba8-8bd6-fd327263fccd",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Should show contact information",
+              "fullTitle": "Footer tests Should show contact information",
+              "timedOut": null,
+              "duration": 124217,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.readFile(Cypress.env('footer')).then(data => {\n  const contact = data.contact;\n  cy.wrap(contact).each(item => {\n    cy.get(':nth-child(4) > .widget_text').within(() => {\n      cy.contains(item[0]).should(\"be.visible\");\n    });\n  });\n  cy.go(\"back\");\n});",
+              "err": {
+                "message": "CypressError: Timed out after waiting `120000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `120000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
+                "estack": "CypressError: Timed out after waiting `120000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `120000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (https://cltrising.com/__cypress/runner/cypress_runner.js:146876:72)\n    at <unknown> (https://cltrising.com/__cypress/runner/cypress_runner.js:147403:18)\n    at tryCatcher (https://cltrising.com/__cypress/runner/cypress_runner.js:18744:23)\n    at <unknown> (https://cltrising.com/__cypress/runner/cypress_runner.js:13866:41)\n    at tryCatcher (https://cltrising.com/__cypress/runner/cypress_runner.js:18744:23)\n    at Promise._settlePromiseFromHandler (https://cltrising.com/__cypress/runner/cypress_runner.js:16679:31)\n    at Promise._settlePromise (https://cltrising.com/__cypress/runner/cypress_runner.js:16736:18)\n    at Promise._settlePromise0 (https://cltrising.com/__cypress/runner/cypress_runner.js:16781:10)\n    at Promise._settlePromises (https://cltrising.com/__cypress/runner/cypress_runner.js:16857:18)\n    at _drainQueueStep (https://cltrising.com/__cypress/runner/cypress_runner.js:13451:12)\n    at _drainQueue (https://cltrising.com/__cypress/runner/cypress_runner.js:13444:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://cltrising.com/__cypress/runner/cypress_runner.js:13460:5)\n    at Async.drainQueues (https://cltrising.com/__cypress/runner/cypress_runner.js:13330:14)\nFrom Your Spec Code:\n    at Context.eval (webpack:///./cypress/e2e/footer.cy.js:53:15)",
+                "diff": null
+              },
+              "uuid": "2e354baa-359a-4067-a7af-adc2e231240b",
+              "parentUUID": "81ae5e83-7320-4ba8-8bd6-fd327263fccd",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "4c1a7f4f-59d7-42da-aa48-8374fcc30592"
+          ],
+          "failures": [
+            "e57096f4-32d5-4876-b614-93adf6d31a6e",
+            "cf5b5993-2939-4703-97ae-6bc870eadcb0",
+            "2e354baa-359a-4067-a7af-adc2e231240b"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 375577,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}
