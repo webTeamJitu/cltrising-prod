@@ -1,0 +1,19 @@
+{
+    "contact_text": [
+        [
+            "Do feel free to contact us or just send in your queries in the form to the right and we will respond to you as soon as possible."
+        ],
+        [
+            "maryanne@cltrising.com"
+        ],
+        [
+            "chapman@cltrising.com"
+        ]
+    ],
+    "form_test": {
+        "firstName": "Fidelis",
+        "lastName": "Waweru",
+        "email": "fidelis.wairimu@thejitu.com",
+        "message": "CLT-Rising contact us cypress test"
+    }
+}

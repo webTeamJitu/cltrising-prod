@@ -2,6 +2,7 @@ const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
   "reporter": "cypress-multi-reporters",
+  video: false,
   "reporterOptions": {
     "reporterEnabled": "mochawesome",
     "mochawesomeReporterOptions": {
@@ -22,6 +23,9 @@ module.exports = defineConfig({
 
   env: {
     CLTRising: "https://cltrising.com/",
-    file_path: "cypress/fixtures/program.json"
+    file_path: "cypress/fixtures/program.json",
+    contact_path: "cypress/fixtures/contact-us.json",
+    story_file: "cypress/fixtures/stories.json",
+    footer: "cypress/fixtures/footer.json"
   },
 });

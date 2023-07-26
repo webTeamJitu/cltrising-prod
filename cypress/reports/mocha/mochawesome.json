@@ -5,9 +5,9 @@
     "passes": 3,
     "pending": 0,
     "failures": 0,
-    "start": "2023-07-24T14:05:37.884Z",
-    "end": "2023-07-24T14:05:49.378Z",
-    "duration": 11494,
+    "start": "2023-07-26T07:30:03.540Z",
+    "end": "2023-07-26T07:30:18.260Z",
+    "duration": 14720,
     "testsRegistered": 3,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "c58f24ad-0b52-4aad-ab1d-5446d03aaa0e",
+      "uuid": "972d08d2-6d0d-4aa9-af1b-1c77ea574aaf",
       "title": "",
       "fullFile": "cypress\\e2e\\about-us.cy.js",
       "file": "cypress\\e2e\\about-us.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "9a3d5240-f42b-4858-bd4a-ccabbad6f426",
+          "uuid": "5ea7fb65-cd92-470c-97f3-72895378dd34",
           "title": "About us test case",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Should find the images of the team members section 1",
               "fullTitle": "About us test case Should find the images of the team members section 1",
               "timedOut": null,
-              "duration": 6567,
+              "duration": 7336,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,8 +47,8 @@
               "context": null,
               "code": "cy.get('.tatsu-S1uC5kAAt2 > .tatsu-section-pad > .tatsu-row-has-one-half > .tatsu-row').find(\"img\").should(\"have.length\", 2, \"be.visible\");",
               "err": {},
-              "uuid": "0a0cf9df-e3ce-404e-9e1d-8dd1de3cced5",
-              "parentUUID": "9a3d5240-f42b-4858-bd4a-ccabbad6f426",
+              "uuid": "c2e9456c-c39b-4502-8094-7f9fb03d23a7",
+              "parentUUID": "5ea7fb65-cd92-470c-97f3-72895378dd34",
               "isHook": false,
               "skipped": false
             },
@@ -56,7 +56,7 @@
               "title": "Should find the images of the team members section 2",
               "fullTitle": "About us test case Should find the images of the team members section 2",
               "timedOut": null,
-              "duration": 1038,
+              "duration": 3272,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -65,8 +65,8 @@
               "context": null,
               "code": "cy.get('.tatsu-S1uC5kAAt2 > .tatsu-section-pad > .tatsu-row-has-three-cols > .tatsu-row').find(\"img\").should(\"have.length\", 3, \"be.visible\");",
               "err": {},
-              "uuid": "ebe20182-4b84-4f9f-aff7-489e2bf74c69",
-              "parentUUID": "9a3d5240-f42b-4858-bd4a-ccabbad6f426",
+              "uuid": "1892277c-fa2d-404b-8655-881194679333",
+              "parentUUID": "5ea7fb65-cd92-470c-97f3-72895378dd34",
               "isHook": false,
               "skipped": false
             },
@@ -74,7 +74,7 @@
               "title": "Should find the images of the team members section 3",
               "fullTitle": "About us test case Should find the images of the team members section 3",
               "timedOut": null,
-              "duration": 932,
+              "duration": 1578,
               "state": "passed",
               "speed": "fast",
               "pass": true,
@@ -83,22 +83,22 @@
               "context": null,
               "code": "cy.get('.tatsu-S1uC5kAAt2 > .tatsu-section-pad > .tatsu-row-has-four-cols > .tatsu-row').find(\"img\").should(\"have.length\", 2, \"be.visible\");",
               "err": {},
-              "uuid": "ae00d8d9-3c62-4dee-a6be-c652dc1bb7a3",
-              "parentUUID": "9a3d5240-f42b-4858-bd4a-ccabbad6f426",
+              "uuid": "024e1cf1-4a5c-4279-939d-40edf4750276",
+              "parentUUID": "5ea7fb65-cd92-470c-97f3-72895378dd34",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "0a0cf9df-e3ce-404e-9e1d-8dd1de3cced5",
-            "ebe20182-4b84-4f9f-aff7-489e2bf74c69",
-            "ae00d8d9-3c62-4dee-a6be-c652dc1bb7a3"
+            "c2e9456c-c39b-4502-8094-7f9fb03d23a7",
+            "1892277c-fa2d-404b-8655-881194679333",
+            "024e1cf1-4a5c-4279-939d-40edf4750276"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 8537,
+          "duration": 12186,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

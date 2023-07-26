@@ -30,6 +30,5 @@
 
 Cypress.Commands.add('readJson', (filePath) => {
     cy.readFile(filePath);
-    
   });
   

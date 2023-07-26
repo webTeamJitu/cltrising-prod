@@ -1,0 +1,20 @@
+{
+    "about": [
+        ["About"],
+        ["CLTRising is a sponsored SAT tutoring and college planning nonprofit that provides services to help high-achieving, low-income students gain opportunities to pursue their dream career path and a college of their choice."]
+    ],
+    "resources": [
+        ["Resources"],
+        ["Khan Academy"],
+        ["CollegeBoard"],
+        ["Blog PrepScholar"],
+        ["QuestBridge"]
+    ],
+    "contact": [
+        ["Contact Us"],
+        ["Academic Support & College Planning"],
+        ["maryanne@cltrising.com"],
+        ["Student-Family Partnerships"],
+        ["chapman@cltrising.com"]
+    ]
+}
