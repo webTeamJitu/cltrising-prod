@@ -5,9 +5,9 @@
     "passes": 1,
     "pending": 0,
     "failures": 0,
-    "start": "2023-07-26T07:30:19.602Z",
-    "end": "2023-07-26T07:30:28.086Z",
-    "duration": 8484,
+    "start": "2023-07-26T08:43:01.104Z",
+    "end": "2023-07-26T08:43:09.762Z",
+    "duration": 8658,
     "testsRegistered": 1,
     "passPercent": 100,
     "pendingPercent": 0,
@@ -18,7 +18,7 @@
   },
   "results": [
     {
-      "uuid": "a24c0eba-7b19-47b3-b134-fd4adfddd7e9",
+      "uuid": "6f94107b-1f0e-4a5a-bb09-575ea3afb447",
       "title": "",
       "fullFile": "cypress\\e2e\\apply.cy.js",
       "file": "cypress\\e2e\\apply.cy.js",
@@ -27,7 +27,7 @@
       "tests": [],
       "suites": [
         {
-          "uuid": "78b63b2b-2d24-4423-8fe9-0003fb497444",
+          "uuid": "bb74b950-2711-4a06-8d75-aa25e4ab37e6",
           "title": "Apply section",
           "fullFile": "",
           "file": "",
@@ -38,7 +38,7 @@
               "title": "Check the doc image and the two buttons",
               "fullTitle": "Apply section Check the doc image and the two buttons",
               "timedOut": null,
-              "duration": 6732,
+              "duration": 6907,
               "state": "passed",
               "speed": "medium",
               "pass": true,
@@ -47,20 +47,20 @@
               "context": null,
               "code": "cy.get('#action-image > .tatsu-column-inner > .tatsu-column-pad-wrap > .tatsu-column-pad > .tatsu-single-image > .tatsu-single-image-inner > img').should(\"have.attr\", \"src\", \"http://cltrising.jitudevops.com/wp-content/uploads/2022/03/app-docs-2022.png\");\ncy.get('.tatsu-two-third > .tatsu-column-inner > .tatsu-column-pad-wrap > .tatsu-column-pad').find(\"a\").should(\"have.length\", 2).each($link => {\n  cy.wrap($link).should(\"have.attr\", \"href\").and(\"not.be.empty\");\n});",
               "err": {},
-              "uuid": "1d37d178-389b-4b1c-aeb4-55030f9404c2",
-              "parentUUID": "78b63b2b-2d24-4423-8fe9-0003fb497444",
+              "uuid": "0dae5d4f-bb9d-4c8d-b380-ef91bc61e1a1",
+              "parentUUID": "bb74b950-2711-4a06-8d75-aa25e4ab37e6",
               "isHook": false,
               "skipped": false
             }
           ],
           "suites": [],
           "passes": [
-            "1d37d178-389b-4b1c-aeb4-55030f9404c2"
+            "0dae5d4f-bb9d-4c8d-b380-ef91bc61e1a1"
           ],
           "failures": [],
           "pending": [],
           "skipped": [],
-          "duration": 6732,
+          "duration": 6907,
           "root": false,
           "rootEmpty": false,
           "_timeout": 2000

@@ -1,0 +1,134 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 2,
+    "passes": 0,
+    "pending": 0,
+    "failures": 2,
+    "start": "2023-07-26T08:43:11.370Z",
+    "end": "2023-07-26T08:45:24.643Z",
+    "duration": 133273,
+    "testsRegistered": 2,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "ba28920a-1432-4d35-b27f-5d0ab875384b",
+      "title": "",
+      "fullFile": "cypress\\e2e\\contact-us.cy.js",
+      "file": "cypress\\e2e\\contact-us.cy.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "315572cb-ca75-4c20-aa4c-398deb82865b",
+          "title": "Contact us form test case",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "Contact us content",
+              "fullTitle": "Contact us form test case Contact us content",
+              "timedOut": null,
+              "duration": 126944,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.readJson(Cypress.env('contact_path')).then(jsonData => {\n  const data = jsonData.contact_text;\n  cy.wrap(data).each(item => {\n    cy.get('.tatsu-rJZMhgACYh').should(\"be.visible\");\n  });\n});\ncy.go(\"back\");",
+              "err": {
+                "message": "CypressError: Timed out after waiting `120000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `120000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.",
+                "estack": "CypressError: Timed out after waiting `120000ms` for your remote page to load.\n\nYour page did not fire its `load` event within `120000ms`.\n\nYou can try increasing the `pageLoadTimeout` value in `cypress.config.js` to wait longer.\n\nBrowsers will not fire the `load` event until all stylesheets and scripts are done downloading.\n\nWhen this `load` event occurs, Cypress will continue running commands.\n    at timedOutWaitingForPageLoad (https://cltrising.com/__cypress/runner/cypress_runner.js:146876:72)\n    at <unknown> (https://cltrising.com/__cypress/runner/cypress_runner.js:147403:18)\n    at tryCatcher (https://cltrising.com/__cypress/runner/cypress_runner.js:18744:23)\n    at <unknown> (https://cltrising.com/__cypress/runner/cypress_runner.js:13866:41)\n    at tryCatcher (https://cltrising.com/__cypress/runner/cypress_runner.js:18744:23)\n    at Promise._settlePromiseFromHandler (https://cltrising.com/__cypress/runner/cypress_runner.js:16679:31)\n    at Promise._settlePromise (https://cltrising.com/__cypress/runner/cypress_runner.js:16736:18)\n    at Promise._settlePromise0 (https://cltrising.com/__cypress/runner/cypress_runner.js:16781:10)\n    at Promise._settlePromises (https://cltrising.com/__cypress/runner/cypress_runner.js:16857:18)\n    at _drainQueueStep (https://cltrising.com/__cypress/runner/cypress_runner.js:13451:12)\n    at _drainQueue (https://cltrising.com/__cypress/runner/cypress_runner.js:13444:9)\n    at ../../node_modules/bluebird/js/release/async.js.Async._drainQueues (https://cltrising.com/__cypress/runner/cypress_runner.js:13460:5)\n    at Async.drainQueues (https://cltrising.com/__cypress/runner/cypress_runner.js:13330:14)\nFrom Your Spec Code:\n    at Context.eval (webpack:///./cypress/e2e/contact-us.cy.js:14:11)",
+                "diff": null
+              },
+              "uuid": "a371966e-e8c5-46ce-982d-6bb20b80936d",
+              "parentUUID": "315572cb-ca75-4c20-aa4c-398deb82865b",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "Input field interaction",
+              "fullTitle": "Contact us form test case Input field interaction",
+              "timedOut": null,
+              "duration": 4547,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.waitUntilDataLoaded().then(() => {\n  cy.readJson('cypress/fixtures/contact-us.json').then(jsonData => {\n    expect(jsonData).not.be.empty;\n    // expect(jsonData).to.have.property('key', 'expectedValue');\n    const data = jsonData.form_test;\n    cy.get('#wpforms-364-field_0').type(`${data.firstName}`).should(\"be.visible\", \"have.value\", `${data.firstName}`).get('#wpforms-364-field_0-last').type(`${data.lastName}`).should(\"be.visible\", \"have.value\", `${data.lastName}`).get('#wpforms-364-field_1').type(`${data.email}`).should(\"be.visible\", \"have.value\", `${data.email}`).get('#wpforms-364-field_2').type(`${data.message}`).should(\"be.visible\", \"have.value\", `${data.message}`).get('.g-recaptcha').find(\"iframe[title='reCAPTCHA']\").should(\"be.visible\").get('.wpforms-submit-container').find(\"button[name='wpforms[submit]']\").should(\"be.visible\");\n  });\n});",
+              "err": {
+                "message": "TypeError: cy.waitUntilDataLoaded is not a function",
+                "estack": "TypeError: cy.waitUntilDataLoaded is not a function\n    at Context.eval (webpack:///./cypress/e2e/contact-us.cy.js:20:11)",
+                "diff": null
+              },
+              "uuid": "2dafd4d5-3a80-4349-9a66-0bc45687435f",
+              "parentUUID": "315572cb-ca75-4c20-aa4c-398deb82865b",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "a371966e-e8c5-46ce-982d-6bb20b80936d",
+            "2dafd4d5-3a80-4349-9a66-0bc45687435f"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 131491,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "id": "default",
+        "reportDir": "cypress/reports/mocha",
+        "quite": true,
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

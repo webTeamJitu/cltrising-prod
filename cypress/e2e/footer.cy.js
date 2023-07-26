@@ -1,4 +1,4 @@
-describe("Header tests", () => {
+describe("Footer tests", () => {
     beforeEach(() => {
         cy.visit(Cypress.env('CLTRising'))
     })

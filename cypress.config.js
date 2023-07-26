@@ -1,6 +1,9 @@
 const { defineConfig } = require("cypress");
 
 module.exports = defineConfig({
+
+  pageLoadTimeout: 120000,
+
   "reporter": "cypress-multi-reporters",
   video: false,
   "reporterOptions": {
