@@ -27,8 +27,19 @@
 // cypress/support/commands/jsonCommands.js
 
 // cypress/support/commands/jsonCommands.js
+import 'cypress-wait-until';
 
 Cypress.Commands.add('readJson', (filePath) => {
-    cy.readFile(filePath);
-  });
-  
+  cy.readFile(filePath);
+});
+
+Cypress.Commands.add('waitUntilDataLoaded', () => {
+  cy.waitUntil(() =>
+    cy.readFile('cypress/fixtures/contact-us.json').then((jsonData) => {
+      // Replace this condition with the actual condition to check if data is loaded
+      // For example, check if a specific property exists in the jsonData
+      return jsonData && !Cypress._.isEmpty(jsonData);
+    })
+  );
+});
+
