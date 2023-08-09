@@ -16,7 +16,6 @@ describe("Contact us form test case", () => {
 
     it("Input field interaction", () => {
 
-        
         cy.readJson('cypress/fixtures/contact-us.json').then((jsonData) => {
 
             const data = jsonData.form_test

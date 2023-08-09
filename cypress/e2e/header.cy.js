@@ -1,6 +1,6 @@
 describe("Header tests", () => {
   beforeEach(() => {
-    cy.visit("https://cltrising.com/");
+    cy.visit(Cypress.env('CLTRising'));
   });
 
   it("Should CLT RISING logo and should be able to link", () => {
